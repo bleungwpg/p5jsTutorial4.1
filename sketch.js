@@ -1,7 +1,9 @@
+// declare bgm variable
 var bgm;
 
 function preload()
 {
+	// load sound file into variable bgm
 	bgm = loadSound("https://bleungwpg.github.io/p5jsTutorial4.1/sounds/bensound-creativeminds.mp3");
 
 }
@@ -9,6 +11,8 @@ function preload()
 function setup()
 {
 	createCanvas(800,600);
+
+	// play music during setup so that it doesn't loop infinitely
 	bgm.play();
 }
 
